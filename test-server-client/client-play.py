@@ -1,6 +1,12 @@
 import socket as soc
+import pickle
+
 
 HEADERSIZE = 10
+
+# code while receving objects 
+full_msg = b''
+d = pickle.loads(full_msg[HEADERSIZE:])
 
 # Socket -> Socket is an endpoint(at an ip on a port) that sends and receives data
 # Initialize socket with socket family type AF_INET -> IPV4 & SOCK_STREAM -> streaming socket
