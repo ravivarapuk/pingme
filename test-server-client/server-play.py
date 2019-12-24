@@ -1,5 +1,17 @@
 import socket as soc
 import time
+import pickle
+
+
+'''
+Why Pickle?
+pickle will be used to send python objects but to send an object we need to serialize it so we will be using  pickle for it. We can only send bytes over the network so we use pickle to convert an object into bytes
+'''
+
+# sample for using pickle to serialize the msg
+d = {1: 'Hey', 2: 'Three'}
+msg = pickle.dumps(d)
+print(msg)
 
 HEADERSIZE = 10
 
