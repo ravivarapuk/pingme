@@ -4,7 +4,7 @@ import select # This gives os level capabilities
 
 HEADER_LENGTH = 10
 IP = "127.0.0.1"
-PORT = 1234
+PORT = 8081
 
 
 server_socket = sc.socket(sc.AF_INET, sc.SOCK_STREAM)
